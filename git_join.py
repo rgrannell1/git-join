@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+from subprocess import call
 
 
 
@@ -11,6 +12,10 @@ import sys
 
 def branch_exists (branchname):
 	return True
+
+def delete_branch (branchname):
+
+	call(["git branch", "-d", branchname])
 
 
 
@@ -23,4 +28,6 @@ def main (args):
 	if not branch_exists(branchname):
 		raise Exception("error: pathspec '" + branchname + "' did not match any branch name.")
 		sys.exit(1)
+
+	#delete_branch(branchname)
 
