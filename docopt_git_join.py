@@ -20,7 +20,7 @@ from git_join import main
 
 
 
-if __name__ == '__main__':
+if __name__ is '__main__':
 
 	arguments = docopt(__doc__, version = "0.1.0")
 	main(arguments)
