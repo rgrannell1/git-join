@@ -30,6 +30,18 @@ o --- o --- o --- o --- A --- B --- C --- D   development
         o                                     releases
 ```
 
+### Requirements.
+
+* Git.
+
+### Installation.
+
+To install git join run the following
+
+```bash
+wget -q -O - https://raw.githubusercontent.com/rgrannell1/git-join/master/install.sh | bash
+```
+
 ## License.
 
 "git join" is released under the MIT licence.
